@@ -6,7 +6,6 @@ A program that randomly rotates the coordinates of molecules around the center o
 *output: xyz-format
 '''
 
-import sys
 import os
 import math
 import random
