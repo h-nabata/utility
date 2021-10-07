@@ -2,15 +2,17 @@
 "pubchem_xyzcoord.py"
 @h-nabata  (2021/10/07 ver1.0)
 A program that obtains the 3D structures of molecules from the compound database "PubChem" and converts them into xyz format.
-*input:  Compound CID
-*output: xyz-format
+PubChem:    https://pubchem.ncbi.nlm.nih.gov/
+*input:     Compound CID
+*output:    xyz-format
 '''
 
 import requests
 import time
+import os
 
-# CIDでsdfファイルの内容を取得（ここだけ入力すればOK）
-CID = [126529400, 126529401]
+# CIDを指定してsdfファイルの内容を取得（ここだけ入力すればOK）
+CID = [10000 + i for i in range(10)]
 
 for i in range(len(CID)):
     url = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/CID/" + str(CID[i]) + "/record/SDF/?record_type=3d&response_type=display"
@@ -33,7 +35,7 @@ for i in range(len(CID)):
             if not line:
                 break
 
-    # 取得データの確認
+    # 取得データの確認（オプション）
     print(atomnum)
     print(atomname)
     print(atomcoord)
@@ -46,4 +48,13 @@ for i in range(len(CID)):
             output_linestr = str(atomname[i]) + " " + str(atomcoord[i][0]) + " " + str(atomcoord[i][1]) + " " + str(atomcoord[i][2]) + "\n"
             outf.write(output_linestr)
 
+#     # 全構造をxyz形式でファイルに出力（オプション）
+#     outputall_file = "C:/Users/" + str(os.getlogin()) + "/Downloads/mol_xyz/all.xyz"  # パスはご自由に指定して下さい
+#     with open(outputall_file, mode='a', encoding='utf-8') as outf2:
+#         outf2.write(str(atomnum) + "\n" + str(CID[i]) + "\n")
+#         for j in range(atomnum):
+#             output_linestr2 = str(atomname[j]) + " " + str(atomcoord[j][0]) + " " + str(atomcoord[j][1]) + " " + str(atomcoord[j][2]) + "\n"
+#             outf2.write(output_linestr2)
+#         outf2.write("\n")
+            
     time.sleep(0.5)  # 0.5秒sleepする（オプション）
