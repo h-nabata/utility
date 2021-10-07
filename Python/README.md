@@ -1,2 +1,2 @@
-molecule_rotation.py: 分子の座標を重心の周りにランダムに回転するプログラム
-pubchem_xyzcoord.py:  化合物データベース「PubChem」から分子の3次元構造を取得してxyz形式にするプログラム
+- molecule_rotation.py: 分子の座標を重心の周りにランダムに回転するプログラム
+- pubchem_xyzcoord.py:  化合物データベース「PubChem」から分子の3次元構造を取得してxyz形式にするプログラム
