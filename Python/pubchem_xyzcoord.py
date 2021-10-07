@@ -1,3 +1,11 @@
+'''
+"pubchem_xyzcoord.py"
+@h-nabata  (2021/10/07 ver1.0)
+A program that obtains the 3D structures of molecules from the compound database "PubChem" and converts them into xyz format.
+*input:  Compound CID
+*output: xyz-format
+'''
+
 import requests
 import time
 
