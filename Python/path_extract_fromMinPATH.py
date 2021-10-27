@@ -2,9 +2,11 @@
 "path_extract_fromMinPATH.py"
 @h-nabata  (2021/10/27 ver1.0)
 A program to extract the numbers of all PTs and all TSs from MinPATH.rrm_* .
-If you have less than three MinPATH.rrm files, please rewrite the contents.
 *input:  "MinPATH.rrm" files
 *output: *list
+usage: `py path_extract.py [num]`
+([num] is an optional argument for the "head command")
+If you have less than three MinPATH.rrm files, please rewrite the contents.
 '''
 
 # coding: utf-8
