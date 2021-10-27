@@ -1,2 +1,3 @@
 - molecule_rotation.py: 分子の座標を重心の周りにランダムに回転するプログラム
 - pubchem_xyzcoord.py:  化合物データベース「PubChem」から分子の3次元構造を取得してxyz形式にするプログラム
+- path_extract_fromMinPATH.py: RCMC計算により得られる MinPATH.rrm_* を読み込んでLUP計算すべきPT/TSの番号をリスト化するプログラム
