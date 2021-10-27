@@ -114,5 +114,5 @@ for i in range(len(TS_list_for_refine_MinPATH_2)):
 PT_list_for_refine_MinPATH_0.sort()
 TS_list_for_refine_MinPATH_0.sort()
 print("Result : total")
-print(PT_list_for_refine_MinPATH_0)
-print(TS_list_for_refine_MinPATH_0)
+print("PT :", PT_list_for_refine_MinPATH_0)
+print("TS :", TS_list_for_refine_MinPATH_0)
