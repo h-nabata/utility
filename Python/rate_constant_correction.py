@@ -26,3 +26,4 @@ k_corr = Z_corr * E
 
 print("rate constant from Eyring's equation :      {:e}".format(k))
 print("corrected rate constant by Wigner's model : {:e}".format(k_corr), "(κ = {:e})".format(kappa))
+
