@@ -27,3 +27,18 @@ k_corr = Z_corr * E
 print("rate constant from Eyring's equation :      {:e}".format(k))
 print("corrected rate constant by Wigner's model : {:e}".format(k_corr), "(κ = {:e})".format(kappa))
 
+# for Japanese
+print("反応温度 =", temperature, "(K) / 反応障壁 =", activation_barrier, "(kJ/mol) / 虚振動数 =", frequency, "(cm-1)")
+print("Wigner補正項 κ = {:e}".format(kappa))
+print("反応速度定数 : {:e}".format(k))
+print("      補正後 : {:e}".format(k_corr))
+print("時定数       : {:e}".format(1/k))
+print("      補正後 : {:e}".format(1/k_corr))
+print("補正前の時定数")
+print('{:>18.10f}'.format((1/k)/3600), "/ hour") # / hour
+print('{:>18.10f}'.format((1/k)/60), "/ min.") # / min.
+print('{:>18.10f}'.format(1/k), "/ sec.") # / sec.
+print("補正後の時定数")
+print('{:>18.10f}'.format((1/k_corr)/3600), "/ hour") # / hour
+print('{:>18.10f}'.format((1/k_corr)/60), "/ min.") # / min.
+print('{:>18.10f}'.format(1/k_corr), "/ sec.") # / sec.
