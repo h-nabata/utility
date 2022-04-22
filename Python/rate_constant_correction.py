@@ -17,8 +17,9 @@ Z = (BOLTZMANN_CONSTANT * temperature / PLANCK_CONSTANT)
 k = Z * E
 
 # Wigner's tunneling correction (E. Wigner, Phys. Rev., 1932, 40, 749–759.)
-# 100.0 is the scaling factor to convert cm-1 into m-1
+# 100.0 is the scaling factor to convert cm-1 into m-1   # 1 [cm-1] ~ 1.986445683269303e-23 [J]
 wigner_factor = (PLANCK_CONSTANT * (abs(frequency) * 100.0 * SPEED_OF_LIGHT) / (BOLTZMANN_CONSTANT * temperature))
+
 # the transmission coefficient
 kappa = 1 + 1/24 * wigner_factor ** 2
 Z_corr = kappa * Z
