@@ -5,4 +5,6 @@
 - ris2ACSformat.py: risファイルからACS系雑誌のフォーマットのサイテーションをテキストで出力するプログラム
 - slackwatching.py: slackのDMを自動で取得･送信･スクリーンショットするプログラム
 - SIESTA_grimme_parameters.py: 元素記号のリストからGrimmeの分散力補正のパラメータセットを計算して表示するプログラム
+- brrier_from_k.py: 反応速度定数から活性化エネルギーを計算するプログラム
 - rate_constant_correction.py: 反応障壁から速度定数（Wignerの1次の虚振動補正含む）を計算するプログラム
+- TSlog2csv.py: GRRMのTS, IRCを求める計算（DS, LUP, Saddle）のlogから停留点の構造と振動数解析の結果をcsvにまとめて出力するプログラム
