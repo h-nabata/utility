@@ -4,8 +4,8 @@ from openpyxl.comments import Comment
 
 # args = sys.argv
 
-filepath = 'C:/Users/sodiu/Downloads/saddle/'
-filename_list = ["R1_C2H3O_addCO2_x100DS1.log"] # sys.argv
+filepath = 'C:/Users/xxxx/Downloads/saddle/'
+filename_list = ["test_DS1.log"] # sys.argv
 # filepath = ''
 # filename_list = args # sys.argv
 column_title_list = ["FW", "TS", "BW"]
@@ -150,6 +150,9 @@ for i in range(len(filename_list)):
                             BW_replaced_therm_list.append(tmp_therm_list)
                     else:
                         AppEQ_replaced_therm_list.append(tmp_therm_list)
+
+            if "IRC following along both forward and backward directions were finished" in line:
+                ts_mode = 1
 
             if not line:
                 break
