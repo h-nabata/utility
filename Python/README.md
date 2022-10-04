@@ -1,10 +1,11 @@
-- molecule_rotation.py: 分子の座標を重心の周りにランダムに回転するプログラム
-- pubchem_xyzcoord.py:  化合物データベース「PubChem」から分子の3次元構造を取得してxyz形式にするプログラム
-- path_extract_fromMinPATH.py: RCMC計算により得られる MinPATH.rrm_* を読み込んでLUP計算すべきPT/TSの番号をリスト化するプログラム
+- molecule_rotation.py: 分子の座標を重心の周りにランダムに回転
+- pubchem_xyzcoord.py:  化合物データベース「PubChem」から分子の3次元構造を取得してxyz形式に
+- path_extract_fromMinPATH.py: RCMC計算により得られる MinPATH.rrm_* を読み込んでLUP計算すべきPT/TSの番号をリスト化
 - LUPpath_ENE_to_csv.py: 指定したJOBのLUPパスのエネルギーを LUPOUTt.log から読み込んでcsvファイルにまとめるプログラム
-- ris2ACSformat.py: risファイルからACS系雑誌のフォーマットのサイテーションをテキストで出力するプログラム
-- slackwatching.py: slackのDMを自動で取得･送信･スクリーンショットするプログラム
-- SIESTA_grimme_parameters.py: 元素記号のリストからGrimmeの分散力補正のパラメータセットを計算して表示するプログラム
-- brrier_from_k.py: 反応速度定数から活性化エネルギーを計算するプログラム
-- rate_constant_correction.py: 反応障壁から速度定数（Wignerの1次の虚振動補正含む）を計算するプログラム
-- TSlog2csv.py: GRRMのTS, IRCを求める計算（DS, LUP, Saddle）のlogから停留点の構造と振動数解析の結果をcsvにまとめて出力するプログラム
+- ris2ACSformat.py: risファイルからACS系雑誌のフォーマットのサイテーションをテキストで出力
+- slackwatching.py: slackのDMを自動で取得･送信･スクリーンショット
+- SIESTA_grimme_parameters.py: 元素記号のリストからGrimmeの分散力補正のパラメータセットを計算して表示
+- brrier_from_k.py: 反応速度定数から活性化エネルギーを計算
+- rate_constant_correction.py: 反応障壁から速度定数（Wignerの1次の虚振動補正含む）を計算
+- TSlog2csv.py: GRRMのTS, IRCを求める計算（DS, LUP, Saddle）のlogから停留点の構造と振動数解析の結果をcsvにまとめて出力
+- sdf2xyz.py: SDFファイルの3次元座標データをxyz形式に変換して出力
