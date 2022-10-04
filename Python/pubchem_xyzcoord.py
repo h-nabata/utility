@@ -45,8 +45,12 @@ for i in range(len(CID)):
     with open(output_file, mode='w', encoding='utf-8') as outf:
         outf.write(str(atomnum) + "\n" + str(CID[i]) + "\n")
         for i in range(atomnum):
-            output_linestr = str(atomname[i]) + " " + str(atomcoord[i][0]) + " " + str(atomcoord[i][1]) + " " + str(atomcoord[i][2]) + "\n"
-            outf.write(output_linestr)
+            xc = '{:>17.12f}'.format(float(atomcoord[i][0]))
+            yc = '{:>17.12f}'.format(float(atomcoord[i][1]))
+            zc = '{:>17.12f}'.format(float(atomcoord[i][2]))
+            output_linestr = str(atomname[i]) + xc + yc + zc
+            print(output_linestr)
+            outf.write(output_linestr + "\n")  # 改行が必要
 
 #     # 全構造をxyz形式でファイルに出力（オプション）
 #     outputall_file = "C:/Users/" + str(os.getlogin()) + "/Downloads/mol_xyz/all.xyz"  # パスはご自由に指定して下さい
