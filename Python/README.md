@@ -1,6 +1,7 @@
 - molecule_rotation.py: 分子の座標を重心の周りにランダムに回転
 - pubchem_xyzcoord.py:  化合物データベース「PubChem」から分子の3次元構造を取得してxyz形式に
 - path_extract_fromMinPATH.py: RCMC計算により得られる MinPATH.rrm_* を読み込んでLUP計算すべきPT/TSの番号をリスト化
+- LUPOUTt2xlsx.py: GRRMの出力ファイル LUPOUTt.log （複数可）を読み込んで一つのxlsxファイルにまとめてエネルギープロファイルをグラフ付きで出力
 - LUPpath_ENE_to_csv.py: 指定したJOBのLUPパスのエネルギーを LUPOUTt.log から読み込んでcsvファイルにまとめるプログラム
 - ris2ACSformat.py: risファイルからACS系雑誌のフォーマットのサイテーションをテキストで出力
 - slackwatching.py: slackのDMを自動で取得･送信･スクリーンショット
