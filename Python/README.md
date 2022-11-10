@@ -10,3 +10,4 @@
 - rate_constant_correction.py: 反応障壁から速度定数（Wignerの1次の虚振動補正含む）を計算
 - TSlog2csv.py: GRRMのTS, IRCを求める計算（DS, LUP, Saddle）のlogから停留点の構造と振動数解析の結果をcsvにまとめて出力
 - sdf2xyz.py: SDFファイルの3次元座標データをxyz形式に変換して出力
+- xyz2cif.py: 3次元xyz座標をcif形式に変換して出力（並進ベクトルの指定が必要）
