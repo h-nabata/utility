@@ -4,10 +4,10 @@
 - LUPOUTt2xlsx.py: GRRMの出力ファイル LUPOUTt.log （複数可）を読み込んで一つのxlsxファイルにまとめてエネルギープロファイルをグラフ付きで出力
 - LUPpath_ENE_to_csv.py: 指定したJOBのLUPパスのエネルギーを LUPOUTt.log から読み込んでcsvファイルにまとめるプログラム
 - ris2ACSformat.py: risファイルからACS系雑誌のフォーマットのサイテーションをテキストで出力
-- slackwatching.py: slackのDMを自動で取得･送信･スクリーンショット
+- slackwatching.py: [slackのDMを自動で取得･送信･スクリーンショット](https://qiita.com/h-nabata/items/7cec84f02db8bd1ca754)
 - SIESTA_grimme_parameters.py: 元素記号のリストからGrimmeの分散力補正のパラメータセットを計算して表示
 - brrier_from_k.py: 反応速度定数から活性化エネルギーを計算
 - rate_constant_correction.py: 反応障壁から速度定数（Wignerの1次の虚振動補正含む）を計算
 - TSlog2csv.py: GRRMのTS, IRCを求める計算（DS, LUP, Saddle）のlogから停留点の構造と振動数解析の結果をcsvにまとめて出力
 - sdf2xyz.py: SDFファイルの3次元座標データをxyz形式に変換して出力
-- xyz2cif.py: 3次元xyz座標をcif形式に変換して出力（並進ベクトルの指定が必要）
+- xyz2cif.py: [3次元xyz座標をcif形式に変換して出力（並進ベクトルの指定が必要）](https://qiita.com/h-nabata/items/c3da4b35553618037dca)
